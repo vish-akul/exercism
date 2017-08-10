@@ -7,13 +7,16 @@ def hey(original_statement):
 
     if statement == '' :
         bob_reply = 'Fine. Be that way!'
-    elif statement.isupper() == True :
+
+    elif re.search('(?!^.*[A-Z]{/2,}.*$)^[A-Za-z]*$',statement) is not None:
         bob_reply = 'Whoa, chill out!'
-    elif statement[-1] == '?' :
+
+    elif statement[1:] == '?' :
         bob_reply = 'Sure.'
+
     elif re.search('[a-zA-Z0-9]+',statement) is not None:
         bob_reply =  'Fine. Be that way!'
-    else:
-        bob_reply = 'Whatever.'
+        
+    bob_reply = 'Whatever.'
 
     return bob_reply
