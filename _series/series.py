@@ -6,10 +6,8 @@ def slices(st, l):
         raise ValueError()
     for i in range(0,len(st)):
         slices.append(list(st[i:i+l]))
-    for j in range(0,len(slices)):
-        results = list(map(int, slices[j]))
+        results = list(map(int, slices[i]))
         final.append(results)
-    for k in range(0,len(final)):
-        if len(final[k]) == l:
-            finalfinal.append(final[k])
+        if len(final[j]) == l:
+            finalfinal.append(final[j])
     return finalfinal
