@@ -6,3 +6,6 @@ Each folder is named after an exercise found in [here](http://exercism.io/langua
 
 ## Languages Used
 Although [exercism](http://exercism.io/) supports many programming languages, python is used in solving all of these exercises.
+
+## My Progess
+The problems I solved latest start with an underscore "_"
