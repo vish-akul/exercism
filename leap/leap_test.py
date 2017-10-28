@@ -1,7 +1,7 @@
 import unittest
 
 from leap import is_leap_year
-
+# This script is responsible for checking if the script is working properly before submitting the solution.
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
